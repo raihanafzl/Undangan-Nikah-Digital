@@ -42,7 +42,6 @@ a:focus-visible, button:focus-visible, .form-control:focus-visible { outline: 3p
 }
 .btn-outline-sky:hover { background: var(--sky-deep); color: #fff; }
 
-/* ---------- Cover ---------- */
 .cover {
   position: fixed; inset: 0; z-index: 2000;
   display: flex; align-items: center; justify-content: center;
