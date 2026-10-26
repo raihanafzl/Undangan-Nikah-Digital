@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nobita &amp; Shizuka | Undangan Pernikahan</title>
+  <meta name="description" content="Kami mengundang Anda di pernikahan Nobita dan Shizuka pada 12 Desember 2026.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="is-locked">
+
+  <div id="cover" class="cover">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+
+    <div class="cover-card arch">
+      <p class="small-caps mb-2">Undangan Pernikahan</p>
+      <h1 class="script cover-names">Nobita <span>&amp;</span> Shizuka</h1>
+      <p class="mb-1 mt-4">Kepada Yth.</p>
+      <p class="guest-name" id="guestName">Bapak/Ibu/Saudara/i</p>
+      <button type="button" class="btn btn-sky mt-3" id="openBtn">Buka Undangan</button>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-md navbar-light site-nav fixed-top">
+    <div class="container">
+      <a class="navbar-brand script" href="#home">A &amp; E</a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Buka menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#couple">Mempelai</a></li>
+          <li class="nav-item"><a class="nav-link" href="#story">Kisah Kami</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Galeri</a></li>
+          <li class="nav-item"><a class="nav-link" href="#events">Acara</a></li>
+          <li class="nav-item"><a class="nav-link" href="#Ucapan">Ucapan</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gift">Hadiah</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header id="home" class="hero">
+      <div class="hero-arch arch reveal">
+        <img class="hero-photo arch" src="asset/cover.jpg" alt="Foto Nobita dan Shizuka">
+        <p class="small-caps">Kami akan menikah</p>
+        <h1 class="script hero-names">Nobita<br><span>&amp;</span><br>Shizuka</h1>
+        <p class="hero-date">Sabtu, 10 Agustus 2026</p>
+        <p class="text-muted-ink mb-0">St. Grace Chapel, Tokyo</p>
+      </div>
+    </header>
+
+    <section class="section text-center">
+      <div class="container reveal">
+        <h2 class="section-title">Menuju Hari Bahagia</h2>
+        <div class="divider"></div>
+        <div class="countdown" aria-label="Hitung mundur menuju pernikahan">
+          <div class="count-box"><strong id="cdDays">0</strong><span>Hari</span></div>
+          <div class="count-box"><strong id="cdHours">0</strong><span>Jam</span></div>
+          <div class="count-box"><strong id="cdMins">0</strong><span>Menit</span></div>
+          <div class="count-box"><strong id="cdSecs">0</strong><span>Detik</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="couple" class="section section-mist text-center">
+      <div class="container reveal">
+        <h2 class="section-title">Mempelai</h2>
+        <div class="divider"></div>
+        <p class="lead-text mx-auto">Dengan penuh sukacita dan doa restu keluarga, kami mengundang Bapak/Ibu/Saudara/i untuk menjadi saksi awal perjalanan baru kami.</p>
+
+        <div class="row g-5 justify-content-center mt-2">
+          <div class="col-md-5">
+            <div class="portrait arch"><img src="asset/Nobita.jpg" alt="Nobita Nobi"></div>
+            <h3 class="person">Nobita Nobi</h3>
+            <p class="mb-0">Putra dari<br>Nobisuke Nobi &amp; Ibu Tamako Nobi</p>
+          </div>
+          <div class="col-md-5">
+            <div class="portrait arch"><img src="asset/Shizuka.jpg" alt="Shizuka Minamoto"></div>
+            <h3 class="person">Shizuka Minamoto</h3>
+            <p class="mb-0">Putri dari<br>Yoshio Minamoto &amp; Ibu Michiko Minamoto</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="section">
+      <div class="container reveal" style="max-width: 720px;">
+        <div class="text-center">
+          <h2 class="section-title">Kisah Kami</h2>
+          <div class="divider"></div>
+        </div>
+        <ol class="timeline">
+          <li>
+            <span class="timeline-year">Masa Kecil</span>
+            <h3>Awal Pertemuan</h3>
+            <p>Berawal dari taman bermain dekat rumah, tawa sederhana, dan kenangan indah masa kecil yang selalu diwarnai bantuan Doraemon.</p>
+          </li>
+          <li>
+            <span class="timeline-year">Masa Remaja</span>
+            <h3>Tumbuh Bersama</h3>
+            <p>Belajar arti saling memahami, melewati berbagai petualangan seru, dan menyadari bahwa kehadiran satu sama lain adalah hal terbaik dalam hidup.</p>
+          </li>
+          <li>
+            <span class="timeline-year">Di Gunung Puncak Es</span>
+            <h3>Momen Berharga</h3>
+            <p>Di tengah badai salju di masa depan, Nobita membuktikan keberaniannya dan Shizuka mantap memilih untuk saling menjaga seumur hidup.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="gallery" class="section section-mist text-center">
+      <div class="container reveal">
+        <h2 class="section-title">Momen Kami</h2>
+        <div class="divider"></div>
+        <div class="row g-2 g-md-3 justify-content-center" style="max-width: 760px; margin: 0 auto;">
+          <div class="col-4">
+            <button type="button" class="gallery-item" data-full="asset/nobika2.jpg">
+              <img src="asset/nobika2.jpg" alt="Foto galeri 1" loading="lazy">
+            </button>
+          </div>
+          <div class="col-4">
+            <button type="button" class="gallery-item" data-full="asset/nobika3.jpg">
+              <img src="asset/nobika3.jpg" alt="Foto galeri 2" loading="lazy">
+            </button>
+          </div>
+          <div class="col-4">
+            <button type="button" class="gallery-item" data-full="asset/nobika5.jpg">
+              <img src="asset/nobika5.jpg" alt="Foto galeri 3" loading="lazy">
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section text-center">
+      <div class="container reveal">
+        <h2 class="section-title">Rangkaian Acara</h2>
+        <div class="divider"></div>
+
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-5">
+            <article class="event-card">
+              <h3>Akad Nikah</h3>
+              <p class="event-date">Sabtu, 10 Desember 2026</p>
+              <p class="event-time">09.00 - 10.30 WITA</p>
+              <p class="mb-0">St. Grace Chapel<br>Tokyo</p>
+            </article>
+          </div>
+          <div class="col-md-5">
+            <article class="event-card">
+              <h3>Resepsi</h3>
+              <p class="event-date">Sabtu, 10 Desember 2026</p>
+              <p class="event-time">11.30 - 14.00 WITA</p>
+              <p class="mb-0">Grand Ballroom<br>Tokyodome Hotel</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 justify-content-center mt-4">
+          <a class="btn btn-sky" id="mapBtn" href="https://maps.google.com/?q=Tokyo+Dome+Hotel+Japan" target="_blank" rel="noopener">Lihat Lokasi</a>
+        </div>
+        <p class="mt-4 mb-0 text-muted-ink">Dress code: nuansa biru muda &amp; putih</p>
+      </div>
+    </section>
+
+    <section id="Ucapan" class="section section-mist">
+      <div class="container reveal">
+        <div class="text-center">
+          <h2 class="section-title">Ucapan</h2>
+          <div class="divider"></div>
+          <p class="lead-text mx-auto">Mohon konfirmasi kehadiran Anda sebelum 1 Desember 2026.</p>
+        </div>
+
+        <div class="row g-5 justify-content-center">
+          <div class="col-lg-5">
+            <form id="UcapanForm" class="needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nama Anda</label>
+                <input type="text" class="form-control" id="name" required>
+                <div class="invalid-feedback">Nama wajib diisi.</div>
+              </div>
+              <div class="mb-3">
+                <label for="attendance" class="form-label">Konfirmasi kehadiran</label>
+                <select class="form-select" id="attendance" required>
+                  <option value="Hadir">Ya, saya akan hadir</option>
+                  <option value="Tidak hadir">Maaf, saya tidak dapat hadir</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="guests" class="form-label">Jumlah tamu</label>
+                <input type="number" class="form-control" id="guests" min="1" max="5" value="1" required>
+                <div class="invalid-feedback">Masukkan jumlah tamu 1 sampai 5.</div>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label">Ucapan &amp; doa untuk mempelai</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-sky w-100">Kirim Ucapan</button>
+              <div id="formAlert" class="mt-3" role="status"></div>
+            </form>
+          </div>
+
+          <div class="col-lg-5">
+            <h3 class="wishes-title">Ucapan dari Para Tamu</h3>
+            <div id="wishList" class="wish-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gift" class="section text-center">
+      <div class="container reveal" style="max-width: 560px;">
+        <h2 class="section-title">Hadiah Pernikahan</h2>
+        <div class="divider"></div>
+        <p>Kehadiran dan doa Anda adalah hadiah terbaik bagi kami. Jika ingin berbagi kebahagiaan, Anda dapat mengirimkannya melalui rekening berikut.</p>
+        <div class="gift-card">
+          <p class="small-caps mb-1">Bank BCA</p>
+          <p class="account-number" id="accountNumber">1234 5677 8910</p>
+          <p class="mb-3">NOBITA NOBI</p>
+          <button type="button" class="btn btn-light btn-sm px-4" id="copyBtn">Salin Nomor Rekening</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer text-center">
+    <p class="script footer-names">Nobita &amp; Shizuka</p>
+    <p class="mb-3">Terima kasih telah menjadi bagian dari kisah kami.</p>
+    <p class="credits mb-0"> <img src="asset/footer.jpg" alt=""></a></p>
+  </footer>
+
+  <div class="modal fade" id="photoModal" tabindex="-1" aria-label="Pratinjau foto" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <button type="button" class="btn-close btn-close-white ms-auto mb-2" data-bs-dismiss="modal" aria-label="Tutup"></button>
+        <img id="modalImg" class="img-fluid rounded" src="" alt="">
+      </div>
+    </div>
+  </div>
+
+  <audio id="bgMusic" src="asset/sound.mp3" loop preload="auto"></audio>
+  <button type="button" id="musicBtn" class="music-btn" aria-label="Putar musik" aria-pressed="false">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+      <path class="icon-play" d="M8 5v14l11-7z"/>
+      <path class="icon-pause" d="M7 5h4v14H7zM13 5h4v14h-4z"/>
+    </svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
