@@ -1,19 +1,13 @@
-/* =========================================================
-   Wedding Invitation – Script (Nobita & Shizuka)
-   ========================================================= */
-
 const $ = (id) => document.getElementById(id);
 
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ---------- Guest name from URL: index.html?to=Budi+Santoso ---------- */
   const guest = new URLSearchParams(window.location.search).get('to');
   if (guest && $('guestName')) {
     $('guestName').textContent = guest;
     if ($('name')) $('name').value = guest;
   }
 
-  /* ---------- Scroll Reveal ---------- */
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -25,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
 
-  /* ---------- Background Music & Cover ---------- */
   const music = $('bgMusic');
   const musicBtn = $('musicBtn');
   let isPlaying = false;
@@ -47,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  // Tombol Buka Undangan
   if ($('openBtn')) {
     $('openBtn').addEventListener('click', () => {
       document.body.classList.remove('is-locked');
@@ -60,19 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Tombol Toggle Musik
   if (musicBtn) {
     musicBtn.addEventListener('click', () => {
       if (music.paused) playMusic(); else { music.pause(); setMusicState(false); }
     });
   }
 
-  // Sembunyikan tombol musik jika file audio tidak ditemukan
   if (music) {
     music.addEventListener('error', () => { if (musicBtn) musicBtn.style.display = 'none'; });
   }
 
-  /* ---------- Countdown (10 Desember 2026) ---------- */
   const targetTime = new Date('2026-12-10T09:00:00+08:00').getTime();
 
   function updateCountdown() {
@@ -85,7 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCountdown();
   setInterval(updateCountdown, 1000);
 
-  /* ---------- Gallery Modal Viewer ---------- */
   const photoModalEl = $('photoModal');
   if (photoModalEl && typeof bootstrap !== 'undefined') {
     const photoModal = new bootstrap.Modal(photoModalEl);
@@ -101,7 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---------- Form Ucapan & RSVP (LocalStorage & Real-time UI) ---------- */
   const STORAGE_KEY = 'wedding-wishes-nobita';
   let wishes = [];
   try { wishes = JSON.parse(localStorage.getItem(STORAGE_KEY)) || []; } catch (e) { wishes = []; }
@@ -130,7 +117,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const ucapanForm = $('UcapanForm');
   if (ucapanForm) {
     ucapanForm.addEventListener('submit', (event) => {
-      event.preventDefault(); // Mencegah reload halaman
+      event.preventDefault();
 
       const nameVal = $('name').value.trim();
       const attendanceVal = $('attendance').value;
@@ -163,7 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ---------- Salin Nomor Rekening ---------- */
   const copyBtn = $('copyBtn');
   if (copyBtn && $('accountNumber')) {
     copyBtn.addEventListener('click', async () => {
